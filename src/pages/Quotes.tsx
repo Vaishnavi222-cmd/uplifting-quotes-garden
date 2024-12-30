@@ -5,64 +5,64 @@ const quotes = [
     text: "The only way to do great work is to love what you do.",
     author: "Steve Jobs",
     category: "Success",
-    image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format&fit=crop&w=300&q=80",
-    description: "Just as a shepherd guides their flock, true leadership comes from passion and dedication to your craft."
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=300&q=80",
+    description: "Like the intricate patterns of code that power our digital world, success comes from dedication and passion."
   },
   {
     text: "Believe you can and you're halfway there.",
     author: "Theodore Roosevelt",
     category: "Motivation",
-    image: "https://images.unsplash.com/photo-1439886183900-e79ec0057170?auto=format&fit=crop&w=300&q=80",
-    description: "Like deer in the wilderness, your journey begins with the confidence to take the first step."
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=300&q=80",
+    description: "Just as a team collaborates to achieve greatness, your belief in yourself is the foundation of achievement."
   },
   {
     text: "Everything you've ever wanted is on the other side of fear.",
     author: "George Addair",
     category: "Courage",
-    image: "https://images.unsplash.com/photo-1501286353178-1ec881214838?auto=format&fit=crop&w=300&q=80",
-    description: "Fear is natural, but courage means facing it head-on, just like every challenge in nature."
+    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=300&q=80",
+    description: "Like scaling mountain peaks, overcoming fear leads to breathtaking new perspectives and achievements."
   },
   {
     text: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
     author: "Winston Churchill",
     category: "Perseverance",
-    image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3?auto=format&fit=crop&w=300&q=80",
-    description: "Like camels crossing vast deserts, persistence is key to reaching your destination."
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=300&q=80",
+    description: "Technology evolves through iterations of trial and error, just as personal growth comes from persistence."
   },
   {
     text: "The future belongs to those who believe in the beauty of their dreams.",
     author: "Eleanor Roosevelt",
     category: "Dreams",
-    image: "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?auto=format&fit=crop&w=300&q=80",
-    description: "Your dreams are like wild horses - free, powerful, and waiting to be realized."
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=300&q=80",
+    description: "Like a visionary entrepreneur, your dreams have the power to shape tomorrow's reality."
   },
   {
     text: "It does not matter how slowly you go as long as you do not stop.",
     author: "Confucius",
     category: "Persistence",
-    image: "https://images.unsplash.com/photo-1441057206919-63d19fac2369?auto=format&fit=crop&w=300&q=80",
-    description: "Like penguins marching through harsh conditions, steady progress leads to success."
+    image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?auto=format&fit=crop&w=300&q=80",
+    description: "Nature's gradual but constant progress reminds us that steady advancement leads to remarkable achievements."
   },
   {
     text: "The only limit to our realization of tomorrow will be our doubts of today.",
     author: "Franklin D. Roosevelt",
     category: "Growth",
-    image: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?auto=format&fit=crop&w=300&q=80",
-    description: "Growth comes from facing our challenges, much like these magnificent creatures adapt to survive."
+    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=300&q=80",
+    description: "Like the sun breaking through clouds, your potential shines brightest when you overcome self-doubt."
   },
   {
     text: "What you get by achieving your goals is not as important as what you become by achieving your goals.",
     author: "Zig Ziglar",
     category: "Personal Development",
-    image: "https://images.unsplash.com/photo-1438565434616-3ef039228b15?auto=format&fit=crop&w=300&q=80",
-    description: "Like mountain goats scaling great heights, the journey shapes who we become."
+    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=300&q=80",
+    description: "Each milestone in your journey shapes your character, like a sculptor crafting a masterpiece."
   },
   {
     text: "The best time to plant a tree was 20 years ago. The second best time is now.",
     author: "Chinese Proverb",
     category: "Action",
-    image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=300&q=80",
-    description: "Nature teaches us that growth takes time, but the time to start is always now."
+    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=300&q=80",
+    description: "Every moment presents an opportunity for growth and positive change, just like nature's constant renewal."
   }
 ];
 

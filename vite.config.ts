@@ -19,4 +19,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Ensure all routes redirect to index.html
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 }));

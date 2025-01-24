@@ -36,6 +36,16 @@ const Navigation = () => {
               Quotes
             </Link>
             <Link
+              to="/guidance"
+              className={`inline-flex items-center px-1 pt-1 text-sm font-medium ${
+                isActive("/guidance")
+                  ? "text-primary border-b-2 border-primary"
+                  : "text-gray-500 hover:text-primary hover:border-b-2 hover:border-primary/50"
+              }`}
+            >
+              Guidance
+            </Link>
+            <Link
               to="/contact"
               className={`inline-flex items-center px-1 pt-1 text-sm font-medium ${
                 isActive("/contact")

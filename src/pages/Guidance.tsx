@@ -2,6 +2,24 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Helmet } from 'react-helmet-async';
 
+const guidanceItems = [
+  {
+    title: "Mindfulness & Meditation",
+    content: "Learn to live in the present moment and reduce stress through daily meditation practices.",
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    title: "Goal Setting",
+    content: "Set SMART goals and create actionable plans to achieve your dreams.",
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    title: "Self-Care Practices",
+    content: "Develop healthy habits and routines that nurture your physical and mental well-being.",
+    image: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80"
+  }
+];
+
 const Guidance = () => {
   return (
     <>

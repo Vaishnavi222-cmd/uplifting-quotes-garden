@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   return (
+    <>
+      <Helmet>
+        <title>Positive Vibes - Welcome</title>
+        <meta name="description" content="Welcome to Positive Vibes - Your daily source of inspiration and motivation. Discover uplifting quotes and guidance for personal growth." />
+        <meta property="og:title" content="Positive Vibes - Welcome" />
+        <meta property="og:description" content="Welcome to Positive Vibes - Your daily source of inspiration and motivation. Discover uplifting quotes and guidance for personal growth." />
+      </Helmet>
     <div className="min-h-screen pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-20 text-center">
@@ -60,6 +68,7 @@ const Index = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

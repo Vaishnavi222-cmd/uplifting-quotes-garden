@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
   return (
+    <>
+      <Helmet>
+        <title>Contact Us - Positive Vibes</title>
+        <meta name="description" content="Get in touch with us. We'd love to hear from you and help you on your journey to personal growth and positivity." />
+        <meta property="og:title" content="Contact Us - Positive Vibes" />
+        <meta property="og:description" content="Get in touch with us. We'd love to hear from you and help you on your journey to personal growth and positivity." />
+      </Helmet>
     <div className="min-h-screen pt-16 bg-gradient-to-br from-white to-primary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-4xl mx-auto">
@@ -59,6 +67,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

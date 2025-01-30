@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Helmet } from 'react-helmet-async';
 
 const quotes = [
   {
@@ -68,57 +69,65 @@ const quotes = [
 
 const Quotes = () => {
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-br from-white to-primary/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-gray-900 mb-12 text-center"
-        >
-          Inspirational Quotes
-        </motion.h1>
-        
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-12"
-        >
-          Discover wisdom and inspiration through our carefully curated collection of quotes. 
-          Let these words and images guide you towards personal growth and success.
-        </motion.p>
+    <>
+      <Helmet>
+        <title>Inspirational Quotes - Positive Vibes</title>
+        <meta name="description" content="Explore our collection of carefully curated inspirational quotes. Find motivation and wisdom to guide you through your day." />
+        <meta property="og:title" content="Inspirational Quotes - Positive Vibes" />
+        <meta property="og:description" content="Explore our collection of carefully curated inspirational quotes. Find motivation and wisdom to guide you through your day." />
+      </Helmet>
+      <div className="min-h-screen pt-16 bg-gradient-to-br from-white to-primary/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-4xl font-bold text-gray-900 mb-12 text-center"
+          >
+            Inspirational Quotes
+          </motion.h1>
+          
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-12"
+          >
+            Discover wisdom and inspiration through our carefully curated collection of quotes. 
+            Let these words and images guide you towards personal growth and success.
+          </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {quotes.map((quote, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={quote.image} 
-                  alt={quote.category}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute top-0 left-0 m-4">
-                  <span className="bg-primary/90 text-white px-3 py-1 rounded-full text-sm">
-                    {quote.category}
-                  </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {quotes.map((quote, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={quote.image} 
+                    alt={quote.category}
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-0 left-0 m-4">
+                    <span className="bg-primary/90 text-white px-3 py-1 rounded-full text-sm">
+                      {quote.category}
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <div className="p-6">
-                <p className="text-lg text-gray-800 mb-4 font-medium italic">"{quote.text}"</p>
-                <p className="text-primary font-medium mb-4">- {quote.author}</p>
-                <p className="text-gray-600 text-sm">{quote.description}</p>
-              </div>
-            </motion.div>
-          ))}
+                <div className="p-6">
+                  <p className="text-lg text-gray-800 mb-4 font-medium italic">"{quote.text}"</p>
+                  <p className="text-primary font-medium mb-4">- {quote.author}</p>
+                  <p className="text-gray-600 text-sm">{quote.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
